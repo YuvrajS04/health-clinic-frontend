@@ -3,7 +3,7 @@ import api from "../api";
 import DeleteAppointmentButton from "./DeleteAppointmentButton"; 
 import RescheduleButton from "./RescheduleButton";
 import moment from "moment";  
-import '../styles.css'; // Import the CSS file for styling
+import '../styles.css'; 
 
 const DoctorAppointments = () => {
     const [doctorId, setDoctorId] = useState("");

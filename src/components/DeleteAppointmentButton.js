@@ -1,6 +1,6 @@
 import React from 'react';
 import api from '../api'; 
-import '../styles.css'; // Import the CSS file for styling
+import '../styles.css'; 
 
 const DeleteAppointmentButton = ({ appointmentId, onDelete }) => {
   const handleDelete = async () => {
@@ -11,7 +11,7 @@ const DeleteAppointmentButton = ({ appointmentId, onDelete }) => {
       const response = await api.delete(`/appointments/${appointmentId}`);
       alert(response.data.message);
       if (onDelete) {
-        onDelete(appointmentId); // Pass appointment ID to the callback to remove it from the list
+        onDelete(appointmentId);
       }
     } catch (error) {
       console.error("Error deleting appointment:", error);

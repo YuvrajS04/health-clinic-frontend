@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import api from '../api';
 import moment from 'moment'; 
 import RescheduleButton from './RescheduleButton'; 
-import '../styles.css'; // Import the CSS file for styling
+import '../styles.css';
 
 const PatientAppointments = () => {
   const [patientId, setPatientId] = useState('');

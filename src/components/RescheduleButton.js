@@ -1,6 +1,6 @@
 import React from 'react';
 import api from '../api'; 
-import '../styles.css'; // Import the CSS file for styling
+import '../styles.css';
 
 const RescheduleButton = ({ appointmentId, onRescheduleSuccess }) => {
   const handleReschedule = async () => {
