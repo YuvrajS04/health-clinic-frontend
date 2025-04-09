@@ -1,8 +1,7 @@
-// src/api.js
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000', // Replace with your backend URL
+  baseURL: 'https://health-clinic-backend-ebf2b59f77c8.herokuapp.com/', 
 });
 
 export default api;
